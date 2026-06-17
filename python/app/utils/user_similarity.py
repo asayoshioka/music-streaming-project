@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 # Expects a user_id
 # Returns a dataframe of similar users with columns:

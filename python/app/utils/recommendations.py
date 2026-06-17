@@ -6,7 +6,7 @@ from utils.queries import (get_user_top_genres,
                      get_song_genre)
 from utils.get_ids_and_maps import get_id_value_map
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 SONG_MAP = get_id_value_map(table="songs", value_column="name")
 

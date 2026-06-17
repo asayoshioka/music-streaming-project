@@ -7,7 +7,7 @@ from get_ids import get_id_map, get_album_ids
 # Get album IDs from existing SQLite "albums" table
 # Insert (track_id, track name, album_id, duration_ms) into the "songs" table within "music.db"
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 CSV_PATH = "/workspaces/273640407/music_db_project/python/data_pipeline/tracks.csv"
 
 

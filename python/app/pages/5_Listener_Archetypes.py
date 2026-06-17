@@ -17,7 +17,7 @@ from utils.queries import (count_rows,
                            get_behavior_df)
 
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 USER_IDS = get_user_ids()
 

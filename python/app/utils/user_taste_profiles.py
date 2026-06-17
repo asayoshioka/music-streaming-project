@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 DAY = [8,9,10,11,12,13,14,15,16,17]
 NIGHT = [20,21,22,23,0,1,2]

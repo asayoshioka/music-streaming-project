@@ -6,7 +6,7 @@ from get_ids import get_id_map
 # Store unique (album, artist) pairs as tuples in a list
 # Insert album names and their corresponding artist from the list into the "albums" table within music.db
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 CSV_PATH = "/workspaces/273640407/music_db_project/python/data_pipeline/tracks.csv"
 
 def seed_albums():

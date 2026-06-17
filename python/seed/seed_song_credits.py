@@ -7,7 +7,7 @@ from get_ids import get_id_map
 # Get song and artist IDs from existing SQLite "songs" and "artists" tables
 # Insert (song ID, artist ID, role) into the "song_credits" table within "music.db"
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 CSV_PATH = "/workspaces/273640407/music_db_project/python/data_pipeline/tracks.csv"
 
 

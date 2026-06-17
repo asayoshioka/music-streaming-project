@@ -8,7 +8,7 @@ import sqlite3
 # Note: some artists may have the same name, so this process may collapse
 # artists into one entity in the "artists" table.
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 CSV_PATH = "/workspaces/273640407/music_db_project/python/data_pipeline/tracks.csv"
 
 def seed_artists():

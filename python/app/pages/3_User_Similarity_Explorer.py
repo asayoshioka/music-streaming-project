@@ -6,7 +6,7 @@ from utils.user_taste_profiles import get_user_taste_profile, get_user_behavior_
 from utils.queries import get_shared_songs
 from utils.styles import create_ombre_badge
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 USERNAME_MAP = get_id_value_map(table="users", value_column="username")
 

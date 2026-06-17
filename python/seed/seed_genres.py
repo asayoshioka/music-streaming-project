@@ -5,7 +5,7 @@ import sqlite3
 # Store unique genres as tuples in a list
 # Insert genres from the list into the "genres" table within music.db
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 CSV_PATH = "/workspaces/273640407/music_db_project/python/data_pipeline/tracks.csv"
 
 def seed_genres():

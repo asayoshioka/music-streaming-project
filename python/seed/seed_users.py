@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime, timedelta, time
 from faker import Faker
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 random.seed(42)
 np.random.seed(42)

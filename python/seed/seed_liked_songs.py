@@ -3,7 +3,7 @@ import random
 
 random.seed(42)
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 STREAM_THRESHOLDS = [3, 5]
 

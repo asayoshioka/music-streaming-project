@@ -7,7 +7,7 @@ from db_mappings import (get_id_value_map,
                          get_songs_by_artist,
                          get_artists_by_genre)
 
-DB_PATH = "/workspaces/273640407/music_db_project/db/music.db"
+DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 PLATFORM_LAUNCH = datetime(2020, 1, 1)
 
