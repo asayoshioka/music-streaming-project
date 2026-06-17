@@ -1,5 +1,0 @@
-# Ignore Python virtual environments
-.venv/*
-
-# Streamlit cache
-**/__pycache__/
