@@ -110,7 +110,19 @@ Built after completing HarvardX's CS50 courses in Python and SQL as a hands-on e
 
 The app is publicly deployed and requires no setup to use:
 
-**[🎧 Open the app →](https://your-app-url.streamlit.app)** ← _replace with your deployment URL_
+**[🎧 Open the app →](https://asa-music-analytics.streamlit.app/)** 
+
+### Run locally
+
+If you'd like to run the project locally:
+
+```bash
+git clone https://github.com/asayoshioka/music-streaming-project.git
+cd music-streaming-project
+pip install -r python/requirements.txt
+cd python/app
+streamlit run python/app/0_Home.py
+```
 
 ---
 

@@ -6,6 +6,8 @@ This document covers the schema design, table relationships, and key design deci
 
 ## Entity-Relationship Overview
 
+![ER Diagram](./python/app/assets/MusicDB_ERD.png)
+
 The schema models the core entities of a music streaming platform and the relationships between them.
 
 **Core entities:** `users`, `artists`, `albums`, `songs`, `genres`
