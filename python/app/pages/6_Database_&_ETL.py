@@ -1,7 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import sqlite3
 from utils import ERD
 
 # CSS for grey container 1
