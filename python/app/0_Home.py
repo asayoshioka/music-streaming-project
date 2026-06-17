@@ -2,7 +2,7 @@ import streamlit as st
 import sqlite3
 from utils.queries import count_rows
 from utils.get_ids_and_maps import get_user_ids
-
+from utils import PIPELINE_FLOWCHART
 
 user_ids = get_user_ids()
 
@@ -134,7 +134,7 @@ st.write("A visual overview of the project pipeline — from raw data to interac
 
 col1, col2, col3 = st.columns([1, 10, 1])
 
-col2.image("assets/data_pipeline_flowchart_horizontal_wrap.svg", width=700)
+col2.image(f"{PIPELINE_FLOWCHART}", width=700)
 
 st.caption("Diagram created with Claude.")
 
