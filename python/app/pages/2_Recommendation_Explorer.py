@@ -26,9 +26,25 @@ song_titles_w_artists = get_song_titles_and_artists()
 def get_initials_avatar(name, size=64, background="random"):
     return f"https://ui-avatars.com/api/?name={name}&size={size}&background={background}&rounded=10&bold=true"
 
-# Adjusted for user profile icon
+# Adjusted for user profile icon 
 def get_initials_avatar_2(name, size=64, background="random"):
     return f"https://ui-avatars.com/api/?name={name}&size={size}&background={background}&rounded=true&bold=true"
+
+# Custom progress bars with left and right labels 
+# (not natively supported by Streamlit) -- code by Claude 
+def score_bar(label, value, color="#5de488"):
+    bar_width = int(value * 100)
+    st.markdown(f"""
+    <div style="margin-bottom: 6px;">
+        <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:3px">
+            <span style="color:#9c9d9f">{label}</span>
+            <span style="color:#e0f5e9; font-weight:600">{value:.2f}</span>
+        </div>
+        <div style="background:#262730; border-radius:4px; height:8px; width:100%">
+            <div style="background:{color}; width:{bar_width}%; height:8px; border-radius:4px"></div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Set page title and layout
 st.set_page_config(page_title="Music Analytics | Asa",
@@ -246,31 +262,32 @@ if mode == "User":
                 st.markdown(explanation)
 
             with col2:
+
                 st.markdown("**:grey[SCORE BREAKDOWN]**")
 
-                # Get rec. song data from df
                 song_data = df.loc[df["Song"] == song, ["normalized_weighted_overlap",
                                                         "normalized_similar_users",
                                                         "normalized_replays",
                                                         "Avg Completion"]]
-                # Convert to tuple
                 song_data = tuple(song_data.iloc[0])
 
-                # Multiply by weights
-                overlap_strength = song_data[0]*0.45
-                overlap_breadth = song_data[1]*0.25
-                replay_rate = song_data[2]*0.20
-                completion_rate = song_data[3]*0.10
+                overlap_strength = song_data[0] * 0.45
+                overlap_breadth  = song_data[1] * 0.25
+                replay_rate      = song_data[2] * 0.20
+                completion_rate  = song_data[3] * 0.10
+                total            = overlap_strength + overlap_breadth + replay_rate + completion_rate
 
-                st.progress(overlap_strength, text=f":grey[Overlap strength] {"\u00A0"*55} **{overlap_strength:.2f}**")
-                st.progress(overlap_breadth, text=f":grey[Overlap breadth] {"\u00A0"*56} **{overlap_breadth:.2f}**")
-                st.progress(replay_rate, text=f":grey[Replay rate] {"\u00A0"*66} **{replay_rate:.2f}**")
-                st.progress(completion_rate, text=f":grey[Completion rate] {"\u00A0"*56} **{completion_rate:.2f}**")
+                score_bar("Overlap strength", overlap_strength)
+                score_bar("Overlap breadth",  overlap_breadth)
+                score_bar("Replay rate",      replay_rate)
+                score_bar("Completion rate",  completion_rate)
 
                 st.space("small")
                 st.divider()
 
-                st.markdown(f":grey[Total] {"\u00A0"*67} :green[**{overlap_strength+overlap_breadth+replay_rate+completion_rate:.2f}**]")
+                col_a, col_b = st.columns([4,0.7])
+                col_a.markdown(f":grey[Total]")
+                col_b.markdown(f":green[**{total:.2f}**]")
 
         # Hide dataframe -- use for debugging
         # st.dataframe(df,
