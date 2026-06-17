@@ -1,0 +1,8 @@
+altair
+datetime
+Faker
+numpy
+pandas
+plotly
+scipy
+streamlit
