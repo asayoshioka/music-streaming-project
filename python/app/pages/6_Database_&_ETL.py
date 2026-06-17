@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import sqlite3
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 # CSS for grey container 1
 css = """

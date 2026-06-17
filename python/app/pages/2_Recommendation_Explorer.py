@@ -16,8 +16,6 @@ from utils.queries import (get_song_titles_and_artists,
                            get_song_stats)
 
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
-
 USERNAME_MAP = get_id_value_map(table="users", value_column="username")
 
 user_ids = get_user_ids()

@@ -5,8 +5,10 @@ from utils.queries import (get_user_top_genres,
                      get_user_top_artists,
                      get_song_genre)
 from utils.get_ids_and_maps import get_id_value_map
+from utils import DB_PATH
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
+
+# DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 SONG_MAP = get_id_value_map(table="songs", value_column="name")
 

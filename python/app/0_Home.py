@@ -3,7 +3,6 @@ import sqlite3
 from utils.queries import count_rows
 from utils.get_ids_and_maps import get_user_ids
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 user_ids = get_user_ids()
 

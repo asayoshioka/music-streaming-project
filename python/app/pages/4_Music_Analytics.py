@@ -24,8 +24,6 @@ from utils.queries import (
     get_streams_by_month
 )
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
-
 MINT_PALETTE = [
     "#143d26", "#1b5c38", "#27854e", "#38ad69", "#5de488",
     "#80e8a2", "#a2f0b8", "#c3f5d1", "#dffadc", "#effcee"

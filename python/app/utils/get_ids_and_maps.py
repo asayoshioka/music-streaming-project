@@ -1,6 +1,8 @@
 import sqlite3
+from utils import DB_PATH
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
+
+# DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 # Returns dict with key-value pairs of the form
 # id_column: value_column

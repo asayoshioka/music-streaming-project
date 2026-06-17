@@ -9,9 +9,6 @@ from utils.queries import (get_liked_songs,
                            get_user_listening_hours
 )
 
-
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
-
 USERNAME_MAP = get_id_value_map(table="users", value_column="username")
 
 # Convert peak_hour to 12-hour time

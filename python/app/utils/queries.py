@@ -1,8 +1,9 @@
 import sqlite3
 import pandas as pd
+from utils import DB_PATH
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
+# DB_PATH = "/workspaces/music-streaming-project/db/music.db"
 
 # Return total listening hours
 def get_total_listening_hours(db_path: str = DB_PATH) -> float:

@@ -17,8 +17,6 @@ from utils.queries import (count_rows,
                            get_behavior_df)
 
 
-DB_PATH = "/workspaces/music-streaming-project/db/music.db"
-
 USER_IDS = get_user_ids()
 
 # Function by Google AI for custom color badges
