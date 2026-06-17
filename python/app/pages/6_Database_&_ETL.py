@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import sqlite3
-
+from utils import ERD
 
 # CSS for grey container 1
 css = """
@@ -76,7 +76,7 @@ st.write("*:grey[How was the data created and structured?]*")
 st.markdown("#### :green[:material/Schema:] Schema")
 with st.container(border=True):
     st.markdown("###### :grey[ER Diagram]")
-    st.iframe("assets/music_db_erd.html")
+    st.iframe(f"{ERD}")
 
     st.markdown("###### Schema Overview")
     st.markdown("""
