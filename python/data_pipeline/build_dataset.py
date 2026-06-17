@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 # Path to raw dataset csv
-PATH = "/workspaces/273640407/music_db_project/raw_dataset.csv"
+PATH = "/workspaces/music-streaming-project/raw_dataset.csv"
 
 # Necessary columns from the Kaggle dataset
 COLUMNS = [
