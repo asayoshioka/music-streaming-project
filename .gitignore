@@ -1,0 +1,8 @@
+# Ignore pycachce 
+__pycache__/
+*.py[cod]
+
+# Ignore venv folders
+venv/
+.venv/
+env/
