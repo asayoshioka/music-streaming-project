@@ -3,6 +3,7 @@ datetime
 Faker
 numpy
 pandas
+pathlib
 plotly
 scipy
 streamlit
