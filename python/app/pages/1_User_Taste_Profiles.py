@@ -186,7 +186,7 @@ with col2:
     st.divider()
 
 # Affinity Score Breakdown
-with st.expander(":green[:material/info: Affinity Score Breakdown]"):
+with st.expander(":grey[:material/info: Affinity Score Breakdown]"):
 
     # Display equation in colored box
     st.markdown("""
@@ -319,7 +319,7 @@ with st.container(border=True):
     col4.metric(label=":grey[:green[:material/Repeat:] Avg Replays]", value=f"{avg_streams_per_song}&times;")
 
 # Diversity Score Breakdown -- custom css by Claude
-with st.expander(":green[:material/info: Diversity Score Breakdown]"):
+with st.expander(":grey[:material/info: Diversity Score Breakdown]"):
     st.markdown("""
     <div style="background:#0a1f12;border-left:3px solid #5de488;border-radius:6px;padding:10px 14px;margin-bottom:1rem">
     <span style="font-size:17px;color:#b8f5ce;font-family:Georgia,serif">
@@ -538,7 +538,7 @@ with st.container(border=True):
             val.markdown(f":red[:material/Favorite:] &nbsp; :grey[{row[3][:10]}]")
             st.divider()
 
-with st.expander(":green[:material/Info: How are liked songs determined?]"):
+with st.expander(":grey[:material/Info: How are liked songs determined?]"):
     st.write(""":grey[
         Liked songs were generated probabilistically based on each user's streaming engagement.
         Songs were scored using a point system that rewards repeated streams and high completion
